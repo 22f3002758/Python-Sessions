@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Python & Logic Quiz – 38 Questions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      margin: 20px;
+      background-color: #f7f7f7;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .section-title {
+      margin-top: 30px;
+      padding: 10px;
+      background-color: #e0e0e0;
+      border-radius: 4px;
+    }
+    .question {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 12px 15px;
+      margin: 10px 0;
+    }
+    .q-text {
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .options {
+      margin-left: 15px;
+      margin-bottom: 8px;
+    }
+    .options div {
+      margin: 2px 0;
+    }
+    .answer {
+      margin-top: 8px;
+      padding: 6px 10px;
+      background-color: #eef8ff;
+      border-left: 3px solid #2196f3;
+      display: none;
+    }
+    button.reveal-btn {
+      margin-top: 5px;
+      padding: 5px 10px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      border-radius: 3px;
+      border: 1px solid #2196f3;
+      background-color: #2196f3;
+      color: #fff;
+    }
+    button.reveal-btn:hover {
+      background-color: #1976d2;
+    }
+    code {
+      background: #f0f0f0;
+      padding: 2px 4px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Python & Logic Quiz</h1>
+<h2>38 Questions with Reveal/Hide Answers</h2>
+
+<!-- Section 1 -->
+<div class="section-title">Section 1: Python Basics & String Manipulation</div>
+
+<div class="question">
+  <div class="q-text">Q1. What will be the type of the following expression?<br>
+    <code>20 % 5 // 250 ** 3</code>
+  </div>
+  <div class="options">
+    <div>A. float</div>
+    <div>B. int</div>
+    <div>C. str</div>
+    <div>D. bool</div>
+  </div>
+  <button class="reveal-btn" data-target="ans1">Reveal / Hide Answer</button>
+  <div id="ans1" class="answer">Answer: B. int</div>
+</div>
+
+<div class="question">
+  <div class="q-text">Q2. What will be the type of the following expression? <code>'#Python'</code></div>
+  <div class="options">
+    <div>A. str</div>
+    <div>B. char</div>
+    <div>C. bool</div>
+    <div>D. Syntax error</div>
+  </div>
+  <button class="reveal-btn" data-target="ans2">Reveal / Hide Answer</button>
+  <div id="ans2" class="answer">Answer: A. str</div>
+</div>
+
+<div class="question">
+  <div class="q-text">Q3. What will be the type of the following expression?<br>
+    <code>100 ** 3 / 300 + 10 - 25</code>
+  </div>
+  <div class="options">
+    <div>A. float</div>
+    <div>B. int</div>
+    <div>C. str</div>
+    <div>D. bool</div>
+  </div>
+  <button class="reveal-btn" data-target="ans3">Reveal / Hide Answer</button>
+  <div id="ans3" class="answer">Answer: A. float</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q4. Assume <code>s</code> is a <code>str</code> variable. What is the type of the expression
+    <code>"".join(sorted(set(s.lower())))</code>?
+  </div>
+  <div class="options">
+    <div>A. int</div>
+    <div>B. set</div>
+    <div>C. list</div>
+    <div>D. bool</div>
+    <div>E. str</div>
+  </div>
+  <button class="reveal-btn" data-target="ans4">Reveal / Hide Answer</button>
+  <div id="ans4" class="answer">Answer: E. str</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q5. What is the output of the following snippet of code?<br>
+    <code>s = 1 &lt;= 2 &lt;= 3<br>print(type(s))</code>
+  </div>
+  <div class="options">
+    <div>A. &lt;class 'bool'&gt;</div>
+    <div>B. &lt;class 'int'&gt;</div>
+    <div>C. &lt;class 'str'&gt;</div>
+    <div>D. &lt;class 'list'&gt;</div>
+  </div>
+  <button class="reveal-btn" data-target="ans5">Reveal / Hide Answer</button>
+  <div id="ans5" class="answer">Answer: A. &lt;class 'bool'&gt;</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q6. Consider the following Python code. What will be the output?<br>
+    <code>s = "programming"<br>print(s[::-1].replace("g", "#"))</code>
+  </div>
+  <div class="options">
+    <div>A. #nimmarrop#</div>
+    <div>B. #nimmar#orp</div>
+    <div>C. programmin#</div>
+    <div>D. gni#marropg</div>
+  </div>
+  <button class="reveal-btn" data-target="ans6">Reveal / Hide Answer</button>
+  <div id="ans6" class="answer">Answer: A. #nimmarrop#</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q7. What is the output of the following snippet of code?<br>
+    <code>x = '1' + '2' + '3'<br>print(x)</code>
+  </div>
+  <div class="options">
+    <div>A. 123</div>
+    <div>B. 6</div>
+    <div>C. 321</div>
+    <div>D. 1,2,3</div>
+  </div>
+  <button class="reveal-btn" data-target="ans7">Reveal / Hide Answer</button>
+  <div id="ans7" class="answer">Answer: A. 123</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q8. What is the output of the following code?<br>
+    <code>str1 = "Python"<br>str2 = "Programming"<br>str3 = str1 + " " + str2[:8]<br>print(len(str3))</code>
+  </div>
+  <div class="options">
+    <div>A. 15</div>
+    <div>B. 14</div>
+    <div>C. 11</div>
+    <div>D. 12</div>
+  </div>
+  <button class="reveal-btn" data-target="ans8">Reveal / Hide Answer</button>
+  <div id="ans8" class="answer">Answer: B. 14</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q9. Consider the following code:<br>
+    <code>
+      text = " &gt;&gt;&gt; Hello, Python! &lt;&lt;&lt; "<br>
+      to_strip = " &lt; &lt;&gt;"<br>
+      A = text.strip(to_strip)<br>
+      B = text.lstrip(to_strip)<br>
+      C = text.rstrip(to_strip)<br>
+      D = text.strip()<br>
+      print(A); print(B); print(C); print(D)
+    </code><br>
+    Which of the following is the correct output?
+  </div>
+  <div class="options">
+    <div>A. Option 6406534361575</div>
+    <div>B. Option 6406534361576</div>
+    <div>C. Option 6406534361577</div>
+    <div>D. Option 6406534361578</div>
+  </div>
+  <button class="reveal-btn" data-target="ans9">Reveal / Hide Answer</button>
+  <div id="ans9" class="answer">Answer: B. Option 6406534361576</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q10. Which of these two snippets is correct for counting vowels in a sentence?
+  </div>
+  <div class="options">
+    <div>A. Only snippet-1 is correct</div>
+    <div>B. Only snippet-2 is correct</div>
+    <div>C. Both snippets are correct</div>
+    <div>D. Both snippets are wrong</div>
+  </div>
+  <button class="reveal-btn" data-target="ans10">Reveal / Hide Answer</button>
+  <div id="ans10" class="answer">Answer: C. Both snippets are correct</div>
+</div>
+
+<!-- Section 2 -->
+<div class="section-title">Section 2: Logic & Control Flow</div>
+
+<div class="question">
+  <div class="q-text">
+    Q11. Consider the following Python code. What will be the output?<br>
+    <code>x, y, z = "python", "python", 0<br>print((x or y) and (z or len(y)))</code>
+  </div>
+  <div class="options">
+    <div>A. 6</div>
+    <div>B. "python"</div>
+    <div>C. 0</div>
+    <div>D. True</div>
+  </div>
+  <button class="reveal-btn" data-target="ans11">Reveal / Hide Answer</button>
+  <div id="ans11" class="answer">Answer: A. 6</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q12. Select the possible output(s) of the given code, assuming any possible values for x, y, and z.<br>
+    <code>
+      if x:<br>
+      &nbsp;&nbsp;print('x')<br>
+      else:<br>
+      &nbsp;&nbsp;if y:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;if z:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print('z')<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;print('y')<br>
+      &nbsp;&nbsp;else:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;print('none')
+    </code>
+  </div>
+  <div class="options">
+    <div>A. x</div>
+    <div>B. z (newline) y</div>
+    <div>C. none</div>
+    <div>D. y</div>
+  </div>
+  <button class="reveal-btn" data-target="ans12">Reveal / Hide Answer</button>
+  <div id="ans12" class="answer">
+    Answer: A. x; B. z (newline) y; C. none; D. y (all are possible)
+  </div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q13. Which statement about the code's execution (investor/market action) is true?
+  </div>
+  <div class="options">
+    <div>A. If line-6 is executed, then line-8 will not be executed.</div>
+    <div>B. If line-11 is executed, then lines 14 to 17 will not be executed.</div>
+    <div>C. If line-8 is executed, the interpreter will directly jump to line-19.</div>
+    <div>D. The interpreter evaluates at least three if conditions for any combinations of inputs.</div>
+  </div>
+  <button class="reveal-btn" data-target="ans13">Reveal / Hide Answer</button>
+  <div id="ans13" class="answer">Answer: B. If line-11 is executed, then lines 14 to 17 will not be executed.</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q14. Select all inputs for which the output is exactly: <code>floor is four</code>
+  </div>
+  <div class="options">
+    <div>A. 0.5</div>
+    <div>B. 4.4</div>
+    <div>C. 1.8</div>
+    <div>D. 2.4</div>
+    <div>E. 3.6</div>
+  </div>
+  <button class="reveal-btn" data-target="ans14">Reveal / Hide Answer</button>
+  <div id="ans14" class="answer">Answer: B. 4.4 and E. 3.6</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q15. For what inputs does the code not produce any output but runs without any error?<br>
+    <code>if x &gt; 5:<br>&nbsp;&nbsp;if y &gt; 15:<br>&nbsp;&nbsp;&nbsp;&nbsp;print("A")</code>
+  </div>
+  <div class="options">
+    <div>A. x = 10 and y = 25</div>
+    <div>B. x = 6 and y = 20</div>
+    <div>C. x = 12 and y = 15</div>
+    <div>D. x = 15 and y = 16</div>
+  </div>
+  <button class="reveal-btn" data-target="ans15">Reveal / Hide Answer</button>
+  <div id="ans15" class="answer">Answer: C. x = 12 and y = 15</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q16. What will be the output if the input <code>days</code> is 437?
+  </div>
+  <div class="options">
+    <div>A. Years: 1, Weeks: 10, Days: 2</div>
+    <div>B. Years: 2, Weeks: 10, Days: 3</div>
+    <div>C. Years: 1, Weeks: 62, Days: 2</div>
+    <div>D. Years: 2, Weeks: 22, Days: 2</div>
+  </div>
+  <button class="reveal-btn" data-target="ans16">Reveal / Hide Answer</button>
+  <div id="ans16" class="answer">Answer: A. Years: 1, Weeks: 10, Days: 2</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q17. What will be the output when you run the code snippet? (x = 15, y = 20)
+  </div>
+  <div class="options">
+    <div>A. 5</div>
+    <div>B. 20</div>
+    <div>C. 35</div>
+    <div>D. 15</div>
+  </div>
+  <button class="reveal-btn" data-target="ans17">Reveal / Hide Answer</button>
+  <div id="ans17" class="answer">Answer: C. 35</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q18. Based on the code snippet (a = 4, b = 7), which of the following options is correct?
+  </div>
+  <div class="options">
+    <div>A. If c = 5, then the output generated is "D"</div>
+    <div>B. If c = 10, then the output generated is "E"</div>
+    <div>C. If c &gt;= 8, then the output is always "D"</div>
+    <div>D. If c &lt; 7 then the output generated is always "D"</div>
+  </div>
+  <button class="reveal-btn" data-target="ans18">Reveal / Hide Answer</button>
+  <div id="ans18" class="answer">Answer: B. If c = 10, then the output generated is "E"</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q19. Pattern repeats for 1000 lines. If line number 500 evaluates to False, what is the value of E?
+  </div>
+  <div class="options">
+    <div>A. True</div>
+    <div>B. False</div>
+    <div>C. Cannot be determined</div>
+  </div>
+  <button class="reveal-btn" data-target="ans19">Reveal / Hide Answer</button>
+  <div id="ans19" class="answer">Answer: A. True</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q20. When will this code throw an error? (x has NOT been defined before)
+  </div>
+  <div class="options">
+    <div>A. When all three Boolean variables are True</div>
+    <div>B. When all three Boolean variables are False</div>
+    <div>C. When at least one of the three Boolean variables is True</div>
+    <div>D. This code will never throw an error</div>
+  </div>
+  <button class="reveal-btn" data-target="ans20">Reveal / Hide Answer</button>
+  <div id="ans20" class="answer">Answer: B. When all three Boolean variables are False</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q21. Select all possible inputs for which this code prints <code>PERFECT!</code> as output.
+  </div>
+  <div class="options">
+    <div>A. (a{b[c]}</div>
+    <div>B. abcd</div>
+    <div>C. 100H</div>
+    <div>D. a(db]</div>
+  </div>
+  <button class="reveal-btn" data-target="ans21">Reveal / Hide Answer</button>
+  <div id="ans21" class="answer">Answer: B. abcd and C. 100H</div>
+</div>
+
+<!-- Section 3 -->
+<div class="section-title">Section 3: Boolean Comprehensions (A &amp; B Logic)</div>
+
+<div class="question">
+  <div class="q-text">Q22. Which output is correct for A = True and B = True?</div>
+  <div class="options">
+    <div>A. True</div>
+    <div>B. False</div>
+    <div>C. Cannot be determined</div>
+  </div>
+  <button class="reveal-btn" data-target="ans22">Reveal / Hide Answer</button>
+  <div id="ans22" class="answer">Answer: A. True</div>
+</div>
+
+<div class="question">
+  <div class="q-text">Q23. Which output is correct for A = True and B = False?</div>
+  <div class="options">
+    <div>A. True</div>
+    <div>B. False</div>
+    <div>C. Cannot be determined</div>
+  </div>
+  <button class="reveal-btn" data-target="ans23">Reveal / Hide Answer</button>
+  <div id="ans23" class="answer">Answer: C. Cannot be determined</div>
+</div>
+
+<div class="question">
+  <div class="q-text">Q24. Which output is correct for A = False and B = True?</div>
+  <div class="options">
+    <div>A. True</div>
+    <div>B. False</div>
+    <div>C. Cannot be determined</div>
+  </div>
+  <button class="reveal-btn" data-target="ans24">Reveal / Hide Answer</button>
+  <div id="ans24" class="answer">Answer: C. Cannot be determined</div>
+</div>
+
+<div class="question">
+  <div class="q-text">Q25. Which output is correct for A = False and B = False?</div>
+  <div class="options">
+    <div>A. True</div>
+    <div>B. False</div>
+    <div>C. Cannot be determined</div>
+  </div>
+  <button class="reveal-btn" data-target="ans25">Reveal / Hide Answer</button>
+  <div id="ans25" class="answer">Answer: B. False</div>
+</div>
+
+<!-- Section 4 -->
+<div class="section-title">Section 4: Boolean Comprehensions (A, B &amp; C Logic)</div>
+
+<div class="question">
+  <div class="q-text">Q26. Which of the following will output True for A = True, B = False, C = True?</div>
+  <div class="options">
+    <div>A. True</div>
+    <div>B. False</div>
+  </div>
+  <button class="reveal-btn" data-target="ans26">Reveal / Hide Answer</button>
+  <div id="ans26" class="answer">Answer: A. True</div>
+</div>
+
+<div class="question">
+  <div class="q-text">Q27. Which of the following will output True for A = False, B = True, C = False?</div>
+  <div class="options">
+    <div>A. True</div>
+    <div>B. False</div>
+  </div>
+  <button class="reveal-btn" data-target="ans27">Reveal / Hide Answer</button>
+  <div id="ans27" class="answer">Answer: B. False</div>
+</div>
+
+<div class="question">
+  <div class="q-text">Q28. Which of the following will output True for A = True, B = True, C = False?</div>
+  <div class="options">
+    <div>A. True</div>
+    <div>B. False</div>
+  </div>
+  <button class="reveal-btn" data-target="ans28">Reveal / Hide Answer</button>
+  <div id="ans28" class="answer">Answer: A. True</div>
+</div>
+
+<div class="question">
+  <div class="q-text">Q29. Which of the following will output True for A = False, B = False, C = False?</div>
+  <div class="options">
+    <div>A. True</div>
+    <div>B. False</div>
+  </div>
+  <button class="reveal-btn" data-target="ans29">Reveal / Hide Answer</button>
+  <div id="ans29" class="answer">Answer: B. False</div>
+</div>
+
+<div class="question">
+  <div class="q-text">Q30. Which of the following will output False for A = False, B = False, C = True?</div>
+  <div class="options">
+    <div>A. False</div>
+    <div>B. True</div>
+  </div>
+  <button class="reveal-btn" data-target="ans30">Reveal / Hide Answer</button>
+  <div id="ans30" class="answer">Answer: A. False</div>
+</div>
+
+<div class="question">
+  <div class="q-text">Q31. Which of the following will output False for A = True, B = False, C = False?</div>
+  <div class="options">
+    <div>A. False</div>
+    <div>B. True</div>
+  </div>
+  <button class="reveal-btn" data-target="ans31">Reveal / Hide Answer</button>
+  <div id="ans31" class="answer">Answer: A. False</div>
+</div>
+
+<div class="question">
+  <div class="q-text">Q32. Which of the following will output False for A = True, B = True, C = True?</div>
+  <div class="options">
+    <div>A. False</div>
+    <div>B. True</div>
+  </div>
+  <button class="reveal-btn" data-target="ans32">Reveal / Hide Answer</button>
+  <div id="ans32" class="answer">Answer: B. True</div>
+</div>
+
+<div class="question">
+  <div class="q-text">Q33. Which of the following will output False for A = False, B = False, C = False?</div>
+  <div class="options">
+    <div>A. False</div>
+    <div>B. True</div>
+  </div>
+  <button class="reveal-btn" data-target="ans33">Reveal / Hide Answer</button>
+  <div id="ans33" class="answer">Answer: A. False</div>
+</div>
+
+<!-- Section 5 -->
+<div class="section-title">Section 5: Numeric &amp; Short Answer</div>
+
+<div class="question">
+  <div class="q-text">
+    Q34. How many elements will be present in result?<br>
+    <code>
+      P = {1, 2, 3, 4}; Q = {3, 4, 5, 6};<br>
+      R = {4, 5, 6, 7}; S = {2, 4, 6, 8}<br>
+      result = ((P | Q) - R) &amp; S
+    </code>
+  </div>
+  <button class="reveal-btn" data-target="ans34">Reveal / Hide Answer</button>
+  <div id="ans34" class="answer">Answer: 1</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q35. What is the output (length) of the code snippet?<br>
+    <code>
+      str1 = "New year"; str2 = "day"<br>
+      str3 = str1[:3] + " " + str2[:]
+    </code>
+  </div>
+  <button class="reveal-btn" data-target="ans35">Reveal / Hide Answer</button>
+  <div id="ans35" class="answer">Answer: 7</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q36. What will be the output of this code?<br>
+    <code>
+      x = 25; y = 40<br>
+      if min(x, y) &lt; 20:<br>
+      &nbsp;&nbsp;result = min(x, y)<br>
+      else:<br>
+      &nbsp;&nbsp;result = x + y
+    </code>
+  </div>
+  <button class="reveal-btn" data-target="ans36">Reveal / Hide Answer</button>
+  <div id="ans36" class="answer">Answer: 65</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q37. What is the value of positive integer a if the output is <code>Star</code>?<br>
+    <code>string = 'Tony StarkIsAnIronMan'<br>print(string[a:b])</code>
+  </div>
+  <button class="reveal-btn" data-target="ans37">Reveal / Hide Answer</button>
+  <div id="ans37" class="answer">Answer: 4</div>
+</div>
+
+<div class="question">
+  <div class="q-text">
+    Q38. What is the final value of output p?<br>
+    <code>
+      M = [[1, 3, 4], [2, -1, 3], [-2, 1, 2]]<br>
+      # loop elements: p = p * M[i][j]
+    </code>
+  </div>
+  <button class="reveal-btn" data-target="ans38">Reveal / Hide Answer</button>
+  <div id="ans38" class="answer">Answer: 288</div>
+</div>
+
+<script>
+  // Attach click handlers to all reveal buttons
+  document.addEventListener('DOMContentLoaded', function () {
+    var buttons = document.querySelectorAll('button.reveal-btn');
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var targetId = this.getAttribute('data-target');
+        var ansDiv = document.getElementById(targetId);
+        if (!ansDiv) return;
+        if (ansDiv.style.display === 'none' || ansDiv.style.display === '') {
+          ansDiv.style.display = 'block';
+        } else {
+          ansDiv.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
